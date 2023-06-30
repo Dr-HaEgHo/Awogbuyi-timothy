@@ -31,7 +31,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 import stars from './stars.svg'
-import grid from './grid.svg'
+import grid from './grid.png'
 
 export {
   logo,

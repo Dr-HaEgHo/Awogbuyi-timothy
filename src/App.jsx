@@ -10,7 +10,6 @@ const App = () => {
   return (
     <div className="app" >
       <div className="app-bg" >
-        <img src={stars} className="stars" />
         <div className="mov-grad1" />
         <div className="mov-grad2" />
         <div className="mov-grad3" />
