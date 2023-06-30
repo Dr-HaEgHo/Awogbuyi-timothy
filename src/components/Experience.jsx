@@ -22,7 +22,7 @@ const ExperienceCard = ({exp}) => {
         position: "relative",
         border: "none",
         borderRadius: 12,
-        borderBottomWidth: 0
+        borderBottomWidth: 0,
       }}
       contentArrowStyle={{ borderRight: "7px solid #232631" }}
       date={exp.date}
@@ -42,9 +42,7 @@ const ExperienceCard = ({exp}) => {
 
         <div className='w-full bg-[#1d1836] h-full z-[2] p-[20px] rounded-[11px]'>
           <h3 className="text-white text-[24px] font-bold">{exp.title}</h3>
-          <p className="text-secondary text-sm font-semibold">
-            {exp.company_name}
-          </p>
+          <p className="text-secondary text-[24px] font-[300]"> {exp.company_name} </p>
         </div>
 
         <div className='absolute w-[600px] h-[600px] bg-3grad -z-[1] roll' ></div>

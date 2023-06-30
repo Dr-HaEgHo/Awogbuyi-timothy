@@ -64,6 +64,13 @@ const services = [
   },
 ];
 
+const skills = [
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+];
+
 const technologies = [
   {
     name: "HTML 5",
@@ -267,4 +274,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects, skills };
