@@ -33,7 +33,34 @@ import tripguide from "./tripguide.png";
 import stars from './stars.svg'
 import grid from './grid.png'
 
+import JAM from './JAM.png'
+import Flip from './Flip.jpeg'
+import bivest from './bivest.png'
+import dimension11 from './dimension11.jpeg'
+
+import astrolanding1 from './astrolanding1.png'
+import eatery from './41Eatery.png'
+import avidadmin from './avidAdmin.png'
+import avidmallthumb from './avidMall.png'
+import avidtodo from './avidTodo.png'
+import metalanding from './metaforeign1.png'
+import oldfoliothumb from './oldfolio.png'
+import newfoliothumb from './newfolio.png'
+
+
+import avidmall from './vids/AVIDMALL.mp4'
+import astro from './vids/Astro.mp4'
+import metaforeign from './vids/Meta Foreign.mp4'
+import oldfolio from './vids/oldfolio.mp4'
+
 export {
+  oldfoliothumb,
+  newfoliothumb,
+  eatery,
+  avidadmin,
+  avidmallthumb,
+  avidtodo,
+  metalanding,
   logo,
   backend,
   creator,
@@ -64,4 +91,13 @@ export {
   carrent,
   jobit,
   tripguide,
+  JAM,
+  Flip,
+  dimension11,
+  bivest,
+  avidmall,
+  astro,
+  metaforeign,
+  oldfolio,
+  astrolanding1
 };

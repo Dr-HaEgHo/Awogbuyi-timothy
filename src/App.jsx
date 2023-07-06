@@ -18,7 +18,7 @@ const App = () => {
         <AnimCursor/>
       <BrowserRouter>
         <Navbar />
-        <AnimatedRoutes />
+        <AnimatedRoutes /> 
       </BrowserRouter>
       </div>
     </div>

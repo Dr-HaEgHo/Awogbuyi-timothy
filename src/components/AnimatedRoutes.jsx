@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence, motion as m } from "framer-motion";
 import { About, Hero, Skills} from ".";
+import Portfolio from "./Portfolio";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -12,6 +13,7 @@ function AnimatedRoutes() {
         <Route path="/" element={<Hero />} />
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
+        <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
     </AnimatePresence>
   );

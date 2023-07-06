@@ -23,6 +23,22 @@ import {
   jobit,
   tripguide,
   threejs,
+  Flip,
+  dimension11,
+  JAM,
+  bivest,
+  astro,
+  astrolanding1,
+  oldfoliothumb,
+  oldfolio,
+  metaforeign,
+  metalanding,
+  avidmall,
+  avidmallthumb,
+  newfoliothumb,
+  avidtodo,
+  avidadmin,
+  eatery,
 } from "../assets";
 import { Icon } from "@iconify/react";
 
@@ -129,23 +145,35 @@ const technologies = [
 const experiences = [
   {
     title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
+    company_name: "Flip Labs",
+    icon: Flip,
+    iconBg: "#1e469e",
     date: "March 2020 - April 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Frontend VueJs Developer",
+    company_name: "Dimension11 Studios",
+    icon: dimension11,
+    iconBg: "#000000",
+    date: "Sep 2022 - Present",
+    points: [
+      "Maintaining web applications using Vue.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Frontend Developer",
+    company_name: "JAM-Forte Technologies ltd",
+    icon: JAM,
+    iconBg: "#fff",
+    date: "Nov 2022 - Feb 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -154,29 +182,16 @@ const experiences = [
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "Frontend Developer",
+    company_name: "BivestCoin",
+    icon: bivest,
+    iconBg: "#f5f5f5",
+    date: "Apr 2022 - Sep 2022",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Participating in code reviews and receiving constructive feedback from senior developers.",
     ],
   },
 ];
@@ -210,67 +225,247 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Portfolio",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to trade giftcards, crypto currency and make everyday transactions like pay bills, buy airtime, make data subscription, cable, e.t.c.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: "tailwindcss",
+        color: "blue-text-gradient",
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
+        name: "reduxtoolkit",
         color: "blue-text-gradient",
       },
       {
         name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
         color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
       },
       {
         name: "css",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: newfoliothumb,
     source_code_link: "https://github.com/",
+    live_link: "https://portfolio-23-mu.vercel.com",
+  },
+  {
+    name: "Astro Africa",
+    description:
+      "Web-based platform that allows users to trade giftcards, crypto currency and make everyday transactions like pay bills, buy airtime, make data subscription, cable, e.t.c.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "reduxtoolkit",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: astrolanding1,
+    // video: astro,
+    // source_code_link: "https://github.com/",
+    live_link: "https://astroafrica.site/",
+  },
+  {
+    name: "Portfolio 1",
+    description:
+      "A simple portfolio built to showcase a developer's skills, services, experience and projects, making it easire to present to clients and employers. ",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typewriter",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: oldfoliothumb,
+    // video: oldfolio,
+    source_code_link: "https://github.com/",
+    live_link: "https://portfolio-dr-haegho.vercel.app/",
+  },
+  {
+    name: "Meta Foreign Options",
+    description:
+      "A sophisticated web app for options trading, chart analysis, and seamless forex and cryptocurrency trading. Our intuitive interface and robust charting capabilities empower users to make informed trade decisions. With cutting-edge technology and rigorous testing, our secure and high-performance platform ensures a seamless trading experience. It's a powerful tool for options traders in the forex and cryptocurrency markets.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "cpanel",
+        color: "green-text-gradient",
+      },
+      {
+        name: "php",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "html",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: metalanding,
+    // video: metaforeign,
+    // source_code_link: "https://github.com/",
+    live_link: "https://meta-foreign-options.vercel.app/",
+  },
+  {
+    name: "Avid Mall",
+    description:
+      "This is an ecommerce website I built using React Js library and styled using CSS, JSX styling and MUI styles. Here, I managed the global states like cart, products, addToCart, removeFromCart, incrementQuantity, e.t.c. using reducer technique from Redux ToolKit, and also handled API requests with createAsyncThunk from ReduxToolkit. Handled form input and validation using formik & Yup and I consumed a dummy products' API which I used through out the website. I collaborated with a skilled backend developer to build this web application using a combination of React.js, HTML, CSS, Redux Toolkit and REST APIs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "reduxtoolkit",
+        color: "green-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: avidmallthumb,
+    // video: avidmall,
+    source_code_link: "https://github.com/Dr-HaEgHo/avid-todo",
+    live_link: "https://avid-store.vercel.app/",
+  },
+  {
+    name: "Todo App",
+    description:
+      "A simple to-do app to handle daily tasks. All the data are handles in the local storage and all the data were made accessible within components through the use of props. I used ReactJs to build this along with CSS and conditional style rendering with JSX styling, to style the app.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "reduxtoolkit",
+        color: "green-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: avidtodo,
+    // video: avidmall,
+    source_code_link: "https://github.com/Dr-HaEgHo/admin-panel",
+    live_link: "https://avid-todo.vercel.app/",
+  },
+  {
+    name: "Admin App",
+    description:
+      "Admin panel for tracking statistics of a company's employees and clients, And a small store to display the company's products. This was achieved with the use of Reactjs, Css, MUI styling for the layout and styling. Consumed data from a dummy API to which a request was made using Axios. Implemented a dynamic data chart with the use of Recharts. Routing with react router dom.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "reduxtoolkit",
+        color: "green-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: avidadmin,
+    // video: avidmall,
+    source_code_link: "https://github.com/Dr-HaEgHo/admin-panel",
+    live_link: "https://admin-panel-lyart.vercel.app/",
+  },
+  {
+    name: "41-Eatery",
+    description:
+      "A simple single page application (SPA) that displays all the dishes available. Navigate through routes using React router dom, Consumed data from an API server which was requested using react fetch. Simple search feature on the products page, to get a new filtered array of products. Site built with React Js and JavaScript.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "reduxtoolkit",
+        color: "green-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: eatery,
+    // video: avidmall,
+    source_code_link: "https://github.com/Dr-HaEgHo/41-Eatery",
+    live_link: "https://41-eatery.vercel.app/",
   },
 ];
 

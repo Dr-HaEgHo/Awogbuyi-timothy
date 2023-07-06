@@ -12,40 +12,55 @@ const ExperienceCard = ({exp}) => {
   return (
     <VerticalTimelineElement
       style={{
-        border: "none"
+        border: "none",
       }}
-      className='no-after-before'
+      className="no-after-before"
       contentStyle={{
-        background: "none",
+        background: "#1d1836",
         color: "#fff",
-        padding: 0,
         position: "relative",
         border: "none",
         borderRadius: 12,
+        padding: [14, 20],
         borderBottomWidth: 0,
       }}
       contentArrowStyle={{ borderRight: "7px solid #232631" }}
       date={exp.date}
       iconStyle={{ background: exp.iconBg }}
       icon={
-        <div className="flex justify-center items-center w-full h-full">
+        <div className="flex justify-center items-center w-full h-full bg overflow-hidden ">
           <img
             src={exp.icon}
             alt={exp.company_name}
-            className="w-[60%] h-[60%]"
+            className="w-[100%] h-[100%] rounded-[300px]"
             object-contain
           />
         </div>
       }
     >
-      <div className="w-full h-full relative overflow-hidden z-0 p-[1px] rounded-[12px]">
-
-        <div className='w-full bg-[#1d1836] h-full z-[2] p-[20px] rounded-[11px]'>
+      <div className="w-full h-full relative overflow-hidden z-0 rounded-[12px]">
+        <div className="w-full bg-[#1d1836] h-full z-[2] rounded-[11px]">
           <h3 className="text-white text-[24px] font-bold">{exp.title}</h3>
-          <p className="text-secondary text-[24px] font-[300]"> {exp.company_name} </p>
+          <p
+            className="text-secondary text-[16px] font-semibold "
+            style={{ margin: 0 }}
+          >
+            {" "}
+            {exp.company_name}{" "}
+          </p>
         </div>
+        <ul className="mt-5 list-disc ml-5 space-y-2 ">
+          {exp.points.map((point, index) => (
+            <li
+              key={`experience-point-${index}`}
+              className="text-white-100 text-[14px] pl-1 tracking-wider"
+            >
+              {point}
+            </li>
+          ))}
+        </ul>
 
-        <div className='absolute w-[600px] h-[600px] bg-3grad -z-[1] roll' ></div>
+        {/* <div className='absolute w-[600px] h-[600px] bg-3grad -z-[1] roll' ></div> */}
       </div>
     </VerticalTimelineElement>
   );

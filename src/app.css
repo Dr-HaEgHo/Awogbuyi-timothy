@@ -111,6 +111,14 @@
     background: linear-gradient(to right,#66ffe700,#66ffe7,#ff25be,#9925ff,  #66ffe700 );
 }
 
+.grad-text{
+    background: linear-gradient(to right,#66ffe7,#ff25be,#9925ff );
+}
+
+.grad-trans{
+    background: linear-gradient(to right,#66ffe830,#ff25be30,#9925ff30 );
+}
+
 .scroll{
     overflow-y: scroll;
 }
@@ -138,6 +146,45 @@
     animation: 5s spin none infinite;
 }
 
+.work-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin: 0 0 2rem 0;
+}
+
+
+
+.foliocard::after{
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: linear-gradient(to top, rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.1));
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: .3s ease-in-out;
+    transition-delay: .2s;
+    pointer-events: none;
+}
+
+.foliocard:hover::after{
+    top:0%;
+    opacity: 9
+}
+
+.foliocard .actions{
+    transform: translateY(160%);
+    transition: .2s ease-in-out;
+    transition-delay: .2s;
+}
+
+.foliocard:hover .actions{
+    transform: translateY(0);
+
+}
 
 @media(max-width: 700px){
     .mov-grad1, .mov-grad2, .mov-grad3{
