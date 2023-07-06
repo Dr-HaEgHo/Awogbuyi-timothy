@@ -34,7 +34,7 @@ import stars from './stars.svg'
 import grid from './grid.png'
 
 import JAM from './JAM.png'
-import Flip from './Flip.jpeg'
+import Flip from './flip.jpeg'
 import bivest from './bivest.png'
 import dimension11 from './dimension11.jpeg'
 
