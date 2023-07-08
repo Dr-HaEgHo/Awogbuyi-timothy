@@ -5,6 +5,10 @@ import { staggerContainer } from "../utils/motion";
 
 const SectionWrapper = (Component, idName) =>
   function HOC() {
+
+    const offset = window.pageYOffset;
+    console.log(offset)
+
     return (
       <div className="w-full h-full scroll bg-3grd">
         <motion.section
@@ -15,7 +19,7 @@ const SectionWrapper = (Component, idName) =>
           className={`${styles.padding} max-w-7xl mx-auto relative`}
         >
           <span className="hash-span" id={idName}>
-            &nbsp;
+            &nbsp; 
           </span>
           <Component />
         </motion.section>

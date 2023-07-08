@@ -123,6 +123,16 @@
     overflow-y: scroll;
 }
 
+.scroll::-webkit-scrollbar{
+    background: none;
+    width: 8px ;
+}
+
+.scroll::-webkit-scrollbar-thumb{
+    background: #ffffff30;
+    border-radius: 20px
+}
+
 .no-after-before::after, .no-after-before::before{
     border: none;
 } 
@@ -185,6 +195,21 @@
     transform: translateY(0);
 
 }
+
+.detailsWrapOpen{
+    overflow: hidden;
+    /* background: purple; */
+    transition: .2s ease-in-out;
+    margin: 5rem 0 0 0;
+}
+
+.detailsWrapClose{
+    overflow: hidden;
+    height: 0vh;
+    transition: .2s ease-in-out;
+    margin: 0rem 0 0 0;
+}
+
 
 @media(max-width: 700px){
     .mov-grad1, .mov-grad2, .mov-grad3{

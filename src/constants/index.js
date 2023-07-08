@@ -171,7 +171,7 @@ const experiences = [
   {
     title: "Frontend Developer",
     company_name: "JAM-Forte Technologies ltd",
-    icon: JAM,
+    icon: JAM, 
     iconBg: "#fff",
     date: "Nov 2022 - Feb 2023",
     points: [
@@ -225,6 +225,7 @@ const testimonials = [
 
 const projects = [
   {
+    number: "01",
     name: "Portfolio",
     description:
       "Web-based platform that allows users to trade giftcards, crypto currency and make everyday transactions like pay bills, buy airtime, make data subscription, cable, e.t.c.",
@@ -255,6 +256,7 @@ const projects = [
     live_link: "https://portfolio-23-mu.vercel.com",
   },
   {
+    number: "02",
     name: "Astro Africa",
     description:
       "Web-based platform that allows users to trade giftcards, crypto currency and make everyday transactions like pay bills, buy airtime, make data subscription, cable, e.t.c.",
@@ -286,9 +288,10 @@ const projects = [
     live_link: "https://astroafrica.site/",
   },
   {
+    number: "03",
     name: "Portfolio 1",
     description:
-      "A simple portfolio built to showcase a developer's skills, services, experience and projects, making it easire to present to clients and employers. ",
+      "A simple portfolio built to showcase a developer's skills, services, experience and projects, making it easier to present to clients and employers. ",
     tags: [
       {
         name: "react",
@@ -313,6 +316,7 @@ const projects = [
     live_link: "https://portfolio-dr-haegho.vercel.app/",
   },
   {
+    number: "04",
     name: "Meta Foreign Options",
     description:
       "A sophisticated web app for options trading, chart analysis, and seamless forex and cryptocurrency trading. Our intuitive interface and robust charting capabilities empower users to make informed trade decisions. With cutting-edge technology and rigorous testing, our secure and high-performance platform ensures a seamless trading experience. It's a powerful tool for options traders in the forex and cryptocurrency markets.",
@@ -344,6 +348,7 @@ const projects = [
     live_link: "https://meta-foreign-options.vercel.app/",
   },
   {
+    number: "05",
     name: "Avid Mall",
     description:
       "This is an ecommerce website I built using React Js library and styled using CSS, JSX styling and MUI styles. Here, I managed the global states like cart, products, addToCart, removeFromCart, incrementQuantity, e.t.c. using reducer technique from Redux ToolKit, and also handled API requests with createAsyncThunk from ReduxToolkit. Handled form input and validation using formik & Yup and I consumed a dummy products' API which I used through out the website. I collaborated with a skilled backend developer to build this web application using a combination of React.js, HTML, CSS, Redux Toolkit and REST APIs.",
@@ -375,6 +380,7 @@ const projects = [
     live_link: "https://avid-store.vercel.app/",
   },
   {
+    number: "06",
     name: "Todo App",
     description:
       "A simple to-do app to handle daily tasks. All the data are handles in the local storage and all the data were made accessible within components through the use of props. I used ReactJs to build this along with CSS and conditional style rendering with JSX styling, to style the app.",
@@ -406,6 +412,7 @@ const projects = [
     live_link: "https://avid-todo.vercel.app/",
   },
   {
+    number: "07",
     name: "Admin App",
     description:
       "Admin panel for tracking statistics of a company's employees and clients, And a small store to display the company's products. This was achieved with the use of Reactjs, Css, MUI styling for the layout and styling. Consumed data from a dummy API to which a request was made using Axios. Implemented a dynamic data chart with the use of Recharts. Routing with react router dom.",
@@ -437,6 +444,7 @@ const projects = [
     live_link: "https://admin-panel-lyart.vercel.app/",
   },
   {
+    number: "08",
     name: "41-Eatery",
     description:
       "A simple single page application (SPA) that displays all the dishes available. Navigate through routes using React router dom, Consumed data from an API server which was requested using react fetch. Simple search feature on the products page, to get a new filtered array of products. Site built with React Js and JavaScript.",
