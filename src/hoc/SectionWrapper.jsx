@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../style";
 import { staggerContainer } from "../utils/motion";
@@ -6,11 +6,9 @@ import { staggerContainer } from "../utils/motion";
 const SectionWrapper = (Component, idName) =>
   function HOC() {
 
-    const offset = window.pageYOffset;
-    console.log(offset)
 
     return (
-      <div className="w-full h-full scroll bg-3grd">
+      <div id="mywindow" className="w-full h-full bg-3grd">
         <motion.section
           variants={staggerContainer(1, 2)}
           initial="hidden"

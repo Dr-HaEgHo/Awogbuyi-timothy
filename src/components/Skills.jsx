@@ -1,26 +1,29 @@
 import React, { useState } from 'react'
 import { SectionWrapper } from '../hoc'
 import  {motion as m } from 'framer-motion'
-import { textVariant } from '../utils/motion';
+import { fadeIn, textVariant } from '../utils/motion';
 import { styles } from '../style';
 import { mobile } from '../assets';
-import { services } from '../constants';
+import { services, technologies } from '../constants';
 import { ServiceCard } from './About';
 
-const SkillItem = () => {
+const SkillItem = ({item, index}) => {
   return (
-    <div className="flex w-[48%] flex-col items-start gap-3">
+    <m.div
+      variants={fadeIn("up", "spring", 0.5 * index, 0.75)}
+      className="flex w-full flex-col items-start gap-3"
+    >
       <img
-        src={mobile}
+        src={item.icon}
         alt="mobile.png"
-        className="w-10 h-10 object-contain bg-pink-200"
+        className="w-10 h-10 object-contain"
       />
-      <h4>HTML 5</h4>
-      <p className="text-sm font-[300] leading-[22px] tracking-wider ">
+      <h4>{item.name}</h4>
+      <p className="text-xs font-[200] leading-[20px] tracking-wider ">
         As a highly skilled React frontend web developer, I bring a wealth of
         experience and expertise in building dynamic and visually
       </p>
-    </div>
+    </m.div>
   );
 }
 
@@ -49,14 +52,11 @@ const Skills = () => {
               As a highly skilled React frontend web developer, I bring a wealth
               of experience and expertise in building dynamic and visually
             </p>
-            <button className="">VIEW ALL SERVICES</button>
           </div>
         </m.div>
       </div>
-
-      {/* MAIN DIV */}~
-      <div className="w-[64%] h-[200vh] ml-auto py-[1rem] z-10 flex flex-col items-start">
-        
+      {/* MAIN DIV */}
+      <div className="w-[64%] ml-auto py-[1rem] z-10 flex flex-col items-start">
         {/* TOP PART WHERE I MAPPED THE SERVICE CARDS */}
         <div className="w-full flex gap-[20px] mb-[4rem] z-50">
           {services.map((item, idx) => (
@@ -65,12 +65,12 @@ const Skills = () => {
         </div>
 
         {/* BOTTOM PART FOR SERVICE ITEM */}
-        <div className="w-full flex items-start justify-between" >
-          <SkillItem />
-          <SkillItem />
+        <div className="w-full min-h-fit sk-grid">
+          {technologies?.map((item, index) => (
+            <SkillItem key={index} item={item} index={index} />
+          ))}
         </div>
       </div>
-
       <p className="text-[#66ffe7] fatface text-[300px] z-0 fixed leading-[240px] bottom-0 left-1/2 transform -translate-x-1/2 opacity-[0.03] whitespace-nowrap">
         My Skills.
       </p>

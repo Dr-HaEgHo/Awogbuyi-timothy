@@ -12,12 +12,12 @@ const App = () => {
         <div className="mov-grad3" />
         <div className="darkoverlay" />
         <img src={grid} className="grid" />
+      </div>
         <AnimCursor />
         <BrowserRouter>
           <Navbar />
           <AnimatedRoutes />
         </BrowserRouter>
-      </div>
     </div>
   );
 };

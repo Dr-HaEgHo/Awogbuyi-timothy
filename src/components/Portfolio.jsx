@@ -34,19 +34,24 @@ const PortfolioCard = ({index, item, handlePortfolio, setParam}) => {
           setParam(item.name);
         }}
       >
-        
         <div className="w-full z-20 py-3 px-4 bg-yelow-300 flex items-center justify-between actions">
           <h3 className="text-sm grad-text font-[500] bg-clip-text text-white">
             {item.name}
           </h3>
           <div className="flex items-center gap-3 ">
-            <ArrowRight
-              color="#fff"
-              className="transform -rotate-45 bg-[#ffffff30] h-[30px] w-[30px] p-[6px] rounded-[40px] hover:scale-[1.04] active:scale-[1.04] "
-            />
-            <a href="#" target="blank" className="bg-[#ffffff30] h-[30px] px-[10px] rounded-[40px] flex items-center justify-center text-sm font-[300] hover:scale-[1.04]">
+            <a href={item.live_link} target="blank">
+              <ArrowRight
+                color="#fff"
+                className="transform -rotate-45 bg-[#ffffff30] h-[30px] w-[30px] p-[6px] rounded-[40px] hover:scale-[1.04] active:scale-[1.04] "
+              />
+            </a>
+            { item.source_code_link !== "" && (<a
+              href={item.source_code_link}
+              target="blank"
+              className="bg-[#ffffff30] h-[30px] px-[10px] rounded-[40px] flex items-center justify-center text-sm font-[300] hover:scale-[1.04]"
+            >
               GitHub
-            </a >
+            </a>)}
           </div>
         </div>
         {item.video ? (
@@ -78,7 +83,7 @@ const Portfolio = () => {
 
   const handlePortfolio = (tag) => {
     setDetailsOpen(true);
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 180)
     setNewDetails(tag);
 
     console.log(param + ":" + newDetails )

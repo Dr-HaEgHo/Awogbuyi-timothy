@@ -252,8 +252,8 @@ const projects = [
       },
     ],
     image: newfoliothumb,
-    source_code_link: "https://github.com/",
-    live_link: "https://portfolio-23-mu.vercel.com",
+    source_code_link: "https://github.com/Dr-HaEgHo/portfolio_23",
+    live_link: "https://portfolio-23-mu.vercel.app",
   },
   {
     number: "02",
@@ -284,7 +284,7 @@ const projects = [
     ],
     image: astrolanding1,
     // video: astro,
-    // source_code_link: "https://github.com/",
+    source_code_link: "",
     live_link: "https://astroafrica.site/",
   },
   {
@@ -312,7 +312,7 @@ const projects = [
     ],
     image: oldfoliothumb,
     // video: oldfolio,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Dr-HaEgHo/portfolio2022",
     live_link: "https://portfolio-dr-haegho.vercel.app/",
   },
   {
@@ -344,7 +344,7 @@ const projects = [
     ],
     image: metalanding,
     // video: metaforeign,
-    // source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Dr-HaEgHo/meta-foreign-options",
     live_link: "https://meta-foreign-options.vercel.app/",
   },
   {
@@ -376,7 +376,7 @@ const projects = [
     ],
     image: avidmallthumb,
     // video: avidmall,
-    source_code_link: "https://github.com/Dr-HaEgHo/avid-todo",
+    source_code_link: "https://github.com/Dr-HaEgHo/avid-store",
     live_link: "https://avid-store.vercel.app/",
   },
   {
@@ -408,7 +408,7 @@ const projects = [
     ],
     image: avidtodo,
     // video: avidmall,
-    source_code_link: "https://github.com/Dr-HaEgHo/admin-panel",
+    source_code_link: "https://github.com/Dr-HaEgHo/avid-todo",
     live_link: "https://avid-todo.vercel.app/",
   },
   {

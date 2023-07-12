@@ -9,6 +9,7 @@ import Experience from "./Experience";
 import { Icon } from "@iconify/react";
 import { DirectRight } from "iconsax-react";
 import { useNavigate } from "react-router-dom";
+import { Contacts } from "./Hero";
 
 export const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -92,13 +93,20 @@ const About = () => {
         </motion.div>
 
         <Experience />
-        <button
-          onClick={() => navigate("/portfolio")}
-          className="w-full text-right mt-[4rem] mb-1 z-50 transform hover:opacity-75 transition duration-200 ease-in-out"
-        >
-          wanna see my projects?
-        </button>
-        <hr className="grad-line w-1/2 ml-auto border-none h-[1px]" />
+        <div className="w-full flex items-end justify-between" >
+          <div className="w-1/2" >
+            <Contacts/>
+          </div>
+          <div className="w-1/2">
+            <button
+              onClick={() => navigate("/portfolio")}
+              className="w-full text-right mt-[4rem] mb-1 z-50 transform hover:opacity-75 transition duration-200 ease-in-out"
+            >
+              wanna see my projects?
+            </button>
+            <hr className="grad-line w-full ml-auto border-none h-[1px]" />
+          </div>
+        </div>
 
         <p className="text-[#66ffe7] fatface text-[300px] z-[0] fixed leading-[240px] bottom-0 left-1/2 transform -translate-x-1/2 opacity-[0.03] whitespace-nowrap pointer-events-none">
           About Me.
@@ -110,5 +118,5 @@ const About = () => {
 
 export default SectionWrapper(About, "about");
 
-
+ 
 // 369 X 263

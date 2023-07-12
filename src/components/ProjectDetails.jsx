@@ -36,7 +36,7 @@ const ProjectDetails = ({param, newDetails}) => {
           )}
           {newDetails.live_link !== "" && (
             <a
-              href={newDetails.source_code_link}
+              href={newDetails.live_link}
               target="blank"
               className="px-8 border border-[#ff25be70] text-sm 2xl:text-base py-[6px] bg-[#ff25be20] hover:bg-[#ff25be30] transition duration-200 rounded-[100px]"
             >
@@ -61,7 +61,7 @@ const ProjectDetails = ({param, newDetails}) => {
               </button>
             ))
           ) : (
-            <p>THere are no tags yet</p>
+            <p>There are no tags yet</p>
           )}
         </div>
       </div>

@@ -2,9 +2,49 @@ import { motion as m } from "framer-motion";
 import React from "react";
 
 import { styles } from "../style";
-import { ComputersCanvas } from "./canvas";
+import { ComputersCanvas, StarsCanvas } from "./canvas";
 import { ArrowRight } from "@iconsans/react/bold";
 import { useNavigate } from "react-router-dom";
+import { Instagram } from "iconsax-react";
+import { Icon } from "@iconify/react";
+
+export const Contacts = () => {
+  return (
+    <div className="w-full flex items-center justify-center gap-[1rem] xl:gap-[2rem]">
+      <a
+        href="https://instagram.com/teem.dev?igshid=OGQ5ZDc2ODk2ZA=="
+        target="blank"
+        className="text-white icon"
+      >
+        <Instagram size="30" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/timothyawogbuyi/"
+        target="blank"
+        className="text-white icon"
+      >
+        <Icon className="text-[30px]" icon="ant-design:linkedin-outlined" />
+      </a>
+      <a
+        href="https://github.com/Dr-HaEgHo"
+        target="blank"
+        className="text-white icon"
+      >
+        <Icon className="text-[30px] text-white" icon="codicon:github" />
+      </a>
+      <a
+        href="https://twitter.com/TarterCim"
+        target="blank"
+        className="text-white icon"
+      >
+        <Icon className="text-[30px] text-white" icon="mingcute:twitter-line" />
+      </a>
+      {/* <a href="" target="blank" className="text-white icon">
+        <Icon className="text-[30px] text-white" icon="ri:discord-line" />
+      </a> */}
+    </div>
+  );
+}
 
 const Hero = () => {
 
@@ -18,6 +58,7 @@ const Hero = () => {
       exit={{ opacity: 0 }}
       className="relative w-full h-screen mx-auto"
     >
+      <StarsCanvas/>
       <p className="text-[#66ffe7] fatface text-[300px] absolute leading-[240px] bottom-0 left-1/2 transform -translate-x-1/2 opacity-[0.03]" >Portfolio.</p>
       <div className="w-full font-poppins h-full absolute top-0 left-0 flex items-center justify-center grad-pic-bg ">
         <div className="w-full max-w-7xl mx-auto">
@@ -38,7 +79,7 @@ const Hero = () => {
 
           <hr className="w-1/3 h-[1px] grad-line border-none mx-auto mt-[2rem]" />
           {/* INVITATION TO SEE PORTFOLIO */}
-          <div onClick={() => navigate('/portfolio')} className="mx-auto mt-[3rem] w-fit flex items-center" >
+          <div onClick={() => navigate('/portfolio')} className="mx-auto mt-[3rem] w-fit flex items-center justify-center" >
             <a className="underline font-[200]" >See portfolio</a>
             <m.div
               animate={{
@@ -56,7 +97,9 @@ const Hero = () => {
           </div>
 
           {/* SOCIAL MEDIA ICONS */}
-          <div></div>
+          <div className="w-full xl:w-1/2 mx-auto mt-[4rem] p-2 ">
+              <Contacts/>
+          </div>
         </div>
       </div>
     </m.section>
