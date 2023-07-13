@@ -6,9 +6,9 @@ const ProjectDetails = ({param, newDetails}) => {
   const params = useParams(); 
 
   return (
-    <div className="w-full flex items-start justify-between">
+    <div className="w-full flex items-start flex-col md:flex-row justify-between">
       {/* CONTENT IMAGE DIV */}
-      <div className="w-[60%] max-h-[494px] aspect-[1.4] flex rounded-[12px] overflow-hidden">
+      <div className="w-full md:w-[60%] max-h-[494px] aspect-[1.4] flex rounded-[12px] overflow-hidden">
         <img
           src={newDetails ? newDetails.image : ""}
           alt={newDetails ? newDetails.name : ""}
@@ -16,10 +16,10 @@ const ProjectDetails = ({param, newDetails}) => {
       </div>
 
       {/* CONTENT DIV */}
-      <div className="w-[38%] max-h-[494px] scroll flex flex-col items-start font-poppins bg-[#ffffff14] rounded-[12px] backdrop:blur-[50px] px-6 py-8">
-        <h2 className="text-[52px] text-[#5bffe7]">{newDetails.number}</h2>
-        <h4 className="text-[34px] text-white font-[400]">{newDetails.name}</h4>
-        <p className="text-sm leading-7 tracking-wide mt-2">
+      <div className="w-full md:w-[38%] mt-6 md:mt-0 max-h-[494px] scroll flex flex-col items-start font-poppins bg-[#ffffff14] rounded-[12px] backdrop:blur-[50px] px-6 py-8">
+        <h2 className="text-[46px] md:text-[52px] text-[#5bffe7]">{newDetails.number}</h2>
+        <h4 className="text-[24px] md:text-[34px] text-white font-[400]">{newDetails.name}</h4>
+        <p className="text-xs md:text-sm leading-5 md:leading-7 tracking-wide mt-2">
           {newDetails.description}
         </p>
 

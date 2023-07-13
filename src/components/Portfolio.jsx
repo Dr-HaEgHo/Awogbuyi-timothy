@@ -28,14 +28,14 @@ const PortfolioCard = ({index, item, handlePortfolio, setParam}) => {
     return (
       <motion.button
         variants={fadeIn("up", "spring", 0.5 * index, 0.75)}
-        className="w-full aspect-[1.4] rounded-[16px] z-0 overflow-hidden relative flex items-end foliocard"
+        className="w-full aspect-[1.4] rounded-[8px] md:rounded-[16px] z-0 overflow-hidden relative flex items-end foliocard"
         onClick={() => {
           handlePortfolio(item);
           setParam(item.name);
         }}
       >
-        <div className="w-full z-20 py-3 px-4 bg-yelow-300 flex items-center justify-between actions">
-          <h3 className="text-sm grad-text font-[500] bg-clip-text text-white">
+        <div className="w-full h-full z-20 py-1 md:py-3 px-1 md:px-4 bg-yelow-300 flex flex-col md:flex-row items-start md:items-center justify-between actions">
+          <h3 className="text-xs md:text-sm grad-text font-[500] bg-clip-text text-white">
             {item.name}
           </h3>
           <div className="flex items-center gap-3 ">
@@ -118,7 +118,7 @@ const Portfolio = () => {
           Walk with me as I take you through 
         </p> */}
 
-        <div className="w-full py-[1rem] mt-[5rem] work-grid">
+        <div className="w-full py-[1rem] mt-[3rem] md:mt-[5rem] work-grid">
           {projects?.map((item, index) => (
             <PortfolioCard
               handlePortfolio={handlePortfolio}

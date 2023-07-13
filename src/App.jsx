@@ -11,7 +11,8 @@ const App = () => {
         <div className="mov-grad2" />
         <div className="mov-grad3" />
         <div className="darkoverlay" />
-        <img src={grid} className="grid" />
+        <div className="bgGrid" >
+        </div>
       </div>
         <AnimCursor />
         <BrowserRouter>

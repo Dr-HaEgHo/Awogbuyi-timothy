@@ -50,12 +50,12 @@ const About = () => {
         className="h-1/2 w-full z-0"
       >
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>Introduction</p>
-          <h2 className={styles.sectionHeadText}>Overview.</h2>
+          <p className={`${styles.sectionSubText} mt-[2rem]`}>Introduction</p>
+          <h2 className={`${styles.sectionHeadText} `}>Overview.</h2>
         </motion.div>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] "
+          className="mt-4 text-secondary text-[15px] md:text-[17px] max-w-3xl leading-[25px] md:leading-[30px] "
         >
           I'm a skilled front-end developer with experience in JavaScript, and
           expertise in frame works like React, Node.Js I'm a quicklearner and
@@ -66,7 +66,7 @@ const About = () => {
 
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] "
+          className="mt-4 text-secondary text-[15px] md:text-[17px] max-w-3xl leading-[25px] md:leading-[30px] "
         >
           I am growth oriented and passionate about improvement, always checking
           out the latest trends in development and best practices for coding.
@@ -82,7 +82,7 @@ const About = () => {
             WHAT HAVE I BEEN UP TO LATELY?
           </p>
           <hr className="grad-line w-[260px] h-[1px] border-none" />
-          <p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] ">
+          <p className="mt-4 text-secondary text-[15px] md:text-[17px] max-w-3xl leading-[25px] md:leading-[30px] ">
             Recently, I started learning and working with TypeScript and React
             Native as well as a little bit of backend tech for creating API
             endpoints for myself using NodeJs and ExpressJs. <br /> I keep
@@ -93,14 +93,14 @@ const About = () => {
         </motion.div>
 
         <Experience />
-        <div className="w-full flex items-end justify-between" >
-          <div className="w-1/2" >
-            <Contacts/>
+        <div className="w-full flex flex-col-reverse md:flex-row items-end justify-between">
+          <div className="w-full mt-[2rem]  md:mt-0 md:w-1/2">
+            <Contacts />
           </div>
-          <div className="w-1/2">
+          <div className="w-full  md:w-1/2">
             <button
               onClick={() => navigate("/portfolio")}
-              className="w-full text-right mt-[4rem] mb-1 z-50 transform hover:opacity-75 transition duration-200 ease-in-out"
+              className="w-full text-right mt-[2rem] md:mt-[4rem] mb-1 z-50 transform hover:opacity-75 transition duration-200 ease-in-out"
             >
               wanna see my projects?
             </button>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { SectionWrapper } from '../hoc';
 import { motion as m } from 'framer-motion';
 import { styles } from '../style';
@@ -7,9 +7,38 @@ import { experiences } from '../constants';
 import { Contacts } from './Hero';
 import Earth from './canvas/Earth';
 import { StarsCanvas } from './canvas';
+// import { SMTPClient } from "emailjs";
 
 
 const Contact = () => {
+
+  const [message, setMessage] = useState();
+
+  // const client = new SMTPClient({
+  //   user: "awogbuyitimothy@gmail.com",
+  //   password: "Secret@c0d3.",
+  //   host: "smtp.awogbuyitimothy@gmail.com",
+  //   ssl: true,
+  // });
+
+  // send the message and get a callback with an error or details of the message that was sent
+  // const handleSendMessage = () => {
+  //   client.send(
+  //     {
+  //       text: message,
+  //       from: "you <username@your-email.com>",
+  //       to: "someone <someone@your-email.com>, another <another@your-email.com>",
+  //       cc: "else <else@your-email.com>",
+  //       subject: "testing emailjs",
+  //     },
+  //     (err, message) => {
+  //       console.log(err || message);
+  //     }
+  //   );
+
+  // }
+
+
   return (
     <m.div
       initial={{ opacity: 0 }}
@@ -18,7 +47,7 @@ const Contact = () => {
       exit={{ opacity: 0 }}
       className="mt-[3rem]"
     >
-      <StarsCanvas/>
+      <StarsCanvas />
       <m.div variants={textVariant()}>
         <p className={styles.sectionSubText}>WANT TO WORK WITH ME?</p>
         <h2 className={styles.sectionHeadText}>Contact Me.</h2>
@@ -30,19 +59,22 @@ const Contact = () => {
         I create stunning digital experiences tailored to ensuring that your
         brand stands out.
       </m.p>
-      <div className="w-full mt-[3rem] z-[2234567898765432] flex items-stretch justify-between p-8">
+      <div className="w-full mt-[3rem] z-[2234567898765432] flex flex-col-reverse md:flex-row items-stretch justify-between p-8">
         {/* designs */}
-        <div className="w-[40%] flex flex-col items-center gap-4 justify-between ">
-          <m.div variants={slideIn("left", "tween", 0.2, 1)} className="h-full w-full">
+        <div className="w-full md:w-[40%] flex flex-col items-center gap-4 justify-between ">
+          <m.div
+            variants={slideIn("left", "tween", 0.2, 1)}
+            className="h-full w-full hidden md:block"
+          >
             <Earth />
           </m.div>
-          <Contacts style={{zIndex: 8765432}} />
+          <Contacts style={{ zIndex: 8765432 }} />
         </div>
 
         {/* Form */}
         <m.div
           variants={slideIn("right", "tween", 0.2, 1)}
-          className="w-[50%] maxw-[400px]"
+          className="w-full md:w-[50%] max-w-[400px]"
         >
           <form action="" className="w-full flex flex-col gap-4 ct-form">
             <div className="w-full flex items-center justify-between gap-4 ">
