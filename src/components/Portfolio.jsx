@@ -34,7 +34,7 @@ const PortfolioCard = ({index, item, handlePortfolio, setParam}) => {
           setParam(item.name);
         }}
       >
-        <div className="w-full h-full z-20 py-1 md:py-3 px-1 md:px-4 bg-yelow-300 flex flex-col md:flex-row items-start md:items-center justify-between actions">
+        <div className="w-full h-full z-20 py-1 md:py-3 px-1 md:px-4 flex flex-col md:flex-row items-start md:items-end justify-between actions">
           <h3 className="text-xs md:text-sm grad-text font-[500] bg-clip-text text-white">
             {item.name}
           </h3>
@@ -88,10 +88,6 @@ const Portfolio = () => {
 
     console.log(param + ":" + newDetails )
   } 
-
-  useEffect(() => {
-    
-   }, [param])
   
   return (
     <>

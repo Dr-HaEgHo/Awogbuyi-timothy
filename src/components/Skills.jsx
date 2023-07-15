@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { SectionWrapper } from '../hoc'
 import  {motion as m } from 'framer-motion'
 import { fadeIn, textVariant } from '../utils/motion';
@@ -11,7 +11,7 @@ const SkillItem = ({item, index}) => {
   return (
     <m.div
       variants={fadeIn("up", "spring", 0.5 * index, 0.75)}
-      className="flex w-full flex-row md:flex-col items-center md:items-start gap-[4px] md:gap-3"
+      className="flex w-full flex-row md:flex-co items-center md:items-star gap-[4px] md:gap-3"
     >
       <img
         src={item.icon}
@@ -19,7 +19,7 @@ const SkillItem = ({item, index}) => {
         className="w-10 h-10 object-contain"
       />
       <h4 className='whitespace-nowrap text-ellipsis overflow-hidden' >{item.name}</h4>
-      <p className="text-[10px] hidden md:block md:text-xs font-[200] leading-[14px] md:leading-[20px] tracking-wider ">
+      <p className="text-[10px] hidden md:bloc md:text-xs font-[200] leading-[14px] md:leading-[20px] tracking-wider ">
         As a highly skilled React frontend web developer, I bring a wealth of
         experience and expertise in building dynamic and visually
       </p>

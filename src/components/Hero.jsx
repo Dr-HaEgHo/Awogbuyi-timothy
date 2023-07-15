@@ -1,5 +1,5 @@
 import { motion as m } from "framer-motion";
-import React from "react";
+import React, { useEffect } from "react";
 
 import { styles } from "../style";
 import { ComputersCanvas, StarsCanvas } from "./canvas";
@@ -48,7 +48,7 @@ export const Contacts = () => {
 
 const Hero = () => {
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   return (
     <m.section

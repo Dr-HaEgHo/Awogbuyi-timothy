@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../style";
@@ -54,7 +54,7 @@ const About = () => {
           <h2 className={`${styles.sectionHeadText} `}>Overview.</h2>
         </motion.div>
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+          variants={textVariant()}
           className="mt-4 text-secondary text-[15px] md:text-[17px] max-w-3xl leading-[25px] md:leading-[30px] "
         >
           I'm a skilled front-end developer with experience in JavaScript, and
@@ -65,7 +65,7 @@ const About = () => {
         </motion.p>
 
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+          variants={textVariant()}
           className="mt-4 text-secondary text-[15px] md:text-[17px] max-w-3xl leading-[25px] md:leading-[30px] "
         >
           I am growth oriented and passionate about improvement, always checking
