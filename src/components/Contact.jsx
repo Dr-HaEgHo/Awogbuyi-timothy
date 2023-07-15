@@ -8,7 +8,8 @@ import { Contacts } from './Hero';
 import Earth from './canvas/Earth';
 import { StarsCanvas } from './canvas';
 // import { SMTPClient } from "emailjs";
-import cogoToast from "cogo-toast";
+// import cogoToast from "cogo-toast";
+
 
 
 const Contact = () => {
@@ -38,6 +39,8 @@ const Contact = () => {
 
   }
 
+  
+
   const handleProceed = (e) => {
     e.preventDefault();
     if (
@@ -47,10 +50,12 @@ const Contact = () => {
       form.message !== "") {
       setForm({ firstName: "", lastName: "", email: "", message: "" });
       postData()
-      cogoToast.success("Message sent!")
+      // cogoToast.success("Message sent!")
+      alert("Message sent!")
       console.log(form)
     } else {
-      cogoToast.error("Please fill all fields");
+      alert("Please fill all fields");
+      // cogoToast.error("Please fill all fields");
     }
   }
 
