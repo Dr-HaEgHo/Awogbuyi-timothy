@@ -228,7 +228,7 @@ const projects = [
     number: "01",
     name: "Portfolio",
     description:
-      "Web-based platform that allows users to trade giftcards, crypto currency and make everyday transactions like pay bills, buy airtime, make data subscription, cable, e.t.c.",
+      "A portfolio website built with ReactJs, ThreeJs, TailwindCss, TiltJs and other cool packages, to showcase skills, and projects for front-end developers",
     tags: [
       {
         name: "react",
