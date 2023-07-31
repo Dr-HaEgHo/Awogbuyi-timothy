@@ -145,7 +145,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Frontend VueJs Developer",
+    title: "Frontend Developer",
     company_name: "Dimension11 Studios",
     icon: dimension11,
     iconBg: "#000000",
@@ -158,7 +158,7 @@ const experiences = [
     ],
   },
   {
-    title: "React.js Developer",
+    title: "Frontend Developer",
     company_name: "Flip Labs",
     icon: Flip,
     iconBg: "#1e469e",
