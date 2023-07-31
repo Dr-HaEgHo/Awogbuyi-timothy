@@ -32,6 +32,7 @@ import tripguide from "./tripguide.png";
 
 import stars from './stars.svg'
 import grid from './grid.png'
+import next from './tech/nextJs.svg'
 
 import JAM from './JAM.png'
 import Flip from './flip.jpeg'
@@ -99,5 +100,6 @@ export {
   astro,
   metaforeign,
   oldfolio,
-  astrolanding1
+  astrolanding1,
+  next
 };

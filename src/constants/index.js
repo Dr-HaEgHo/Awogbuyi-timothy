@@ -28,6 +28,7 @@ import {
   JAM,
   bivest,
   astro,
+  next,
   astrolanding1,
   oldfoliothumb,
   oldfolio,
@@ -120,13 +121,13 @@ const technologies = [
     name: "Node JS",
     icon: nodejs,
   },
-  // {
-  //   name: "MongoDB",
-  //   icon: mongodb,
-  // },
+  {
+    name: "Next JS",
+    icon: mongodb,
+  },
   {
     name: "Three JS",
-    icon: threejs,
+    icon: next,
   },
   {
     name: "git",
@@ -144,18 +145,6 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Flip Labs",
-    icon: Flip,
-    iconBg: "#1e469e",
-    date: "March 2020 - April 2021",
-    points: [
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
     title: "Frontend VueJs Developer",
     company_name: "Dimension11 Studios",
     icon: dimension11,
@@ -167,6 +156,18 @@ const experiences = [
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
+  },
+  {
+    title: "React.js Developer",
+    company_name: "Flip Labs",
+    icon: Flip,
+    iconBg: "#1e469e",
+    date: "Jan 2023 - August 2023",
+    points: [
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ], 
   },
   {
     title: "Frontend Developer",
@@ -247,7 +248,19 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "css",
+        name: "Tilt Js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Three Js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Framer Motion",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "css animation",
         color: "pink-text-gradient",
       },
     ],
