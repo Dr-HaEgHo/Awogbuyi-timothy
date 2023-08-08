@@ -40,6 +40,8 @@ import {
   avidtodo,
   avidadmin,
   eatery,
+  inganci,
+  leverage,
 } from "../assets";
 import { Icon } from "@iconify/react";
 
@@ -225,6 +227,81 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    number: "01",
+    name: "Inganci",
+    description:
+      "A website to showcase the product and services for a local integrated food ingredient provider built on tech transformation",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "reduxtoolkit",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Framer Motion",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "css animation",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Swiper Js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: inganci,
+    source_code_link: "",
+    live_link: "https://inganci.vercel.app",
+  },
+  {
+    number: "01",
+    name: "Leverage IT",
+    description:
+      "",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css animation",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "TradingView",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "charts",
+        color: "pink-text-gradient",
+      },
+
+    ],
+    image: leverage,
+    source_code_link: "",
+    live_link: "https://portfolio-23-mu.vercel.app",
+  },
   {
     number: "01",
     name: "Portfolio",

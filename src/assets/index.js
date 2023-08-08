@@ -54,6 +54,9 @@ import astro from './vids/Astro.mp4'
 import metaforeign from './vids/Meta Foreign.mp4'
 import oldfolio from './vids/oldfolio.mp4'
 
+import inganci from './inganci.png'
+import leverage from './leverage.png'
+
 export {
   oldfoliothumb,
   newfoliothumb,
@@ -101,5 +104,7 @@ export {
   metaforeign,
   oldfolio,
   astrolanding1,
-  next
+  next,
+  inganci, 
+  leverage
 };

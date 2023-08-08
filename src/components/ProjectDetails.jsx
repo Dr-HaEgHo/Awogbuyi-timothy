@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
 
-const ProjectDetails = ({param, newDetails}) => {
+const ProjectDetails = ({indx, param, newDetails}) => {
 
   const params = useParams(); 
 
@@ -17,7 +17,7 @@ const ProjectDetails = ({param, newDetails}) => {
 
       {/* CONTENT DIV */}
       <div className="w-full md:w-[38%] mt-6 md:mt-0 max-h-[494px] scroll flex flex-col items-start font-poppins bg-[#ffffff14] rounded-[12px] backdrop:blur-[50px] px-6 py-8">
-        <h2 className="text-[46px] md:text-[52px] text-[#5bffe7]">{newDetails.number}</h2>
+        <h2 className="text-[46px] md:text-[52px] text-[#5bffe7]">{indx + 1 > 9 ? "" : 0 }{indx + 1 }</h2>
         <h4 className="text-[24px] md:text-[34px] text-white font-[400]">{newDetails.name}</h4>
         <p className="text-xs md:text-sm leading-5 md:leading-7 tracking-wide mt-2">
           {newDetails.description}

@@ -30,7 +30,7 @@ const PortfolioCard = ({index, item, handlePortfolio, setParam}) => {
         variants={fadeIn("up", "spring", 0.5 * index, 0.75)}
         className="w-full aspect-[1.4] rounded-[8px] md:rounded-[16px] z-0 overflow-hidden relative flex items-end foliocard"
         onClick={() => {
-          handlePortfolio(item);
+          handlePortfolio(item, index);
           setParam(item.name);
         }}
       >
@@ -79,12 +79,14 @@ const Portfolio = () => {
 
   const [detailsOpen, setDetailsOpen] = useState(false);
   const [newDetails, setNewDetails] = useState({})
+  const [ indx, setIndx] = useState("")
   const [param, setParam] = useState("")
 
-  const handlePortfolio = (tag) => {
+  const handlePortfolio = (tag, index) => {
     setDetailsOpen(true);
     window.scrollTo(0, 180)
     setNewDetails(tag);
+    setIndx(index)
 
     console.log(param + ":" + newDetails )
   } 
@@ -108,7 +110,7 @@ const Portfolio = () => {
               : "detailsWrapClose"
           }
         >
-          <ProjectDetails param={param} newDetails={newDetails} />
+          <ProjectDetails param={param} indx={indx} newDetails={newDetails} />
         </div>
         {/* <p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] ">
           Walk with me as I take you through 
