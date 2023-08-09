@@ -270,7 +270,7 @@ const projects = [
     number: "01",
     name: "Leverage IT",
     description:
-      "",
+      "Demo trading app for decentralized leverage protocol for crypto, stocks and more. AI powered trading bot and anonymous trading",
     tags: [
       {
         name: "react",
