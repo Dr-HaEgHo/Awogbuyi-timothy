@@ -296,11 +296,11 @@ const projects = [
         name: "charts",
         color: "pink-text-gradient",
       },
-
     ],
     image: leverage,
     source_code_link: "",
-    live_link: "https://portfolio-23-mu.vercel.app",
+    live_link:
+      "https://6485212c6225df41493f72be--paper-trading-app.netlify.app/",
   },
   {
     number: "01",
