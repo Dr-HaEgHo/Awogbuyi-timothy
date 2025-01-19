@@ -13,6 +13,14 @@
   color-scheme: dark;
 }
 
+.hoverActiveOpacity{
+  @apply hover:opacity-80 active:opacity-70 transition duration-300
+}
+
+.hoverActiveScale{
+  @apply  transform hover:scale-105 active:scale-100 transition duration-300
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;

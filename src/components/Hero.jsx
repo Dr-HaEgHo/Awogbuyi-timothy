@@ -84,9 +84,9 @@ const Hero = () => {
           {/* INVITATION TO SEE PORTFOLIO */}
           <div
             onClick={() => navigate("/portfolio")}
-            className="mx-auto mt-[1rem] xl:mt-[3rem] w-fit flex items-center justify-between"
+            className="mx-auto mt-[1rem] xl:mt-[3rem] w-fit flex items-center justify-between bg-whiteTrans20 py-1 px-5 border border-whiteTrans30 rounded-full hoverActiveOpacity"
           >
-            <a className="underline font-[200]">See portfolio</a>
+            <a className="font-[200] ">See portfolio</a>
             <m.div
               animate={{
                 x: [0, 14, 0],
@@ -98,7 +98,7 @@ const Hero = () => {
               }}
               className="w-fit"
             >
-              <ArrowRight className="w-[30px] h-[30px]" size="52" />
+              <ArrowRight className="w-[30px] h-[30px]" size="52"/>
             </m.div>
           </div>
 

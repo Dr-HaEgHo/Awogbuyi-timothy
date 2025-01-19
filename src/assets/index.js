@@ -48,14 +48,9 @@ import metalanding from './metaforeign1.png'
 import oldfoliothumb from './oldfolio.png'
 import newfoliothumb from './newfolio.png'
 
-
-import avidmall from './vids/AVIDMALL.mp4'
-import astro from './vids/Astro.mp4'
-import metaforeign from './vids/Meta Foreign.mp4'
-import oldfolio from './vids/oldfolio.mp4'
-
 import inganci from './inganci.png'
 import leverage from './leverage.png'
+import tzk from './tzk.jpeg'
 
 export {
   oldfoliothumb,
@@ -99,12 +94,9 @@ export {
   Flip,
   dimension11,
   bivest,
-  avidmall,
-  astro,
-  metaforeign,
-  oldfolio,
   astrolanding1,
   next,
   inganci, 
-  leverage
+  leverage,
+  tzk
 };

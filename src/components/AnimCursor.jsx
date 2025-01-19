@@ -4,8 +4,8 @@ import AnimatedCursor from 'react-animated-cursor'
 const AnimCursor = () => {
   return (
     <AnimatedCursor
-      innerSize={14}
-      outerSize={60}
+      innerSize={20}
+      outerSize={0}
       color="#D7D7D7"
       outerStyle={{
         backgroundColor: "none",
@@ -14,6 +14,7 @@ const AnimCursor = () => {
       innerStyle={{
         background: "#D7D7D7",
       }}
+      zIndex={9999999999999}
       outerAlpha={0.2}
       innerScale={1.4}
       outerScale={0}

@@ -57,9 +57,8 @@ const About = () => {
           variants={textVariant()}
           className="mt-4 text-secondary text-[15px] md:text-[17px] max-w-3xl leading-[25px] md:leading-[30px] "
         >
-          I'm a skilled front-end developer with experience in JavaScript, and
-          expertise in frame works like React, Node.Js I'm a quicklearner and
-          collaborate closely with clients to create efficient, scalable, and
+          I'm a skilled front-end developer with experience in JavaScript, TypeScript, and
+          expertise with vuejs, React, Nextjs, and Node.Js. I love to collaborate closely with clients to create efficient, scalable, and
           user-friendly solutions that solve real-world problems. Let's work
           together to bring your ideas to life
         </motion.p>
@@ -68,8 +67,7 @@ const About = () => {
           variants={textVariant()}
           className="mt-4 text-secondary text-[15px] md:text-[17px] max-w-3xl leading-[25px] md:leading-[30px] "
         >
-          I am growth oriented and passionate about improvement, always checking
-          out the latest trends in development and best practices for coding.
+          I bring high quality solutions to businesses to achieve performance, profitability, higher conversion and unique high quality code.
         </motion.p>
 
         <motion.div variants={textVariant()}>
@@ -82,16 +80,16 @@ const About = () => {
             WHAT HAVE I BEEN UP TO LATELY?
           </p>
           <hr className="grad-line w-[260px] h-[1px] border-none" />
-          <p className="mt-4 text-secondary text-[15px] md:text-[17px] max-w-3xl leading-[25px] md:leading-[30px] ">
-            Recently, I started learning and working with TypeScript and React
-            Native as well as a little bit of backend tech for creating API
-            endpoints for myself using NodeJs and ExpressJs. <br /> I keep
-            learning everyday to be a better developer and provide much better
-            solutions for you and everyone who needs my services, and I will go
-            to great lengths to ensure that you are fully satisfied.
+          <p className="mt-4 mb-12 text-secondary text-[15px] md:text-[17px] max-w-3xl leading-[25px] md:leading-[30px] ">
+            Recently, I have dived into deeper learning AI and also have worked on some personal projects that involve integrating AI into simple day-to-day apps, providing solutions one at a time. <br />
+            I keep improving everyday to become a better developer who will provide better
+            solutions for you.
+            I am here to ensure that you are fully satisfied.
           </p>
         </motion.div>
 
+
+        <Contacts />
         <Experience />
         <div className="w-full flex flex-col-reverse md:flex-row items-end justify-between">
           <div className="w-full mt-[2rem]  md:mt-0 md:w-1/2">
