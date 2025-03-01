@@ -298,7 +298,7 @@ const projects = [
     image: "./StacFx.png",
     video: "stacfx.mp4",
     source_code_link: "",
-    live_link: "https://astroafrica.site/",
+    live_link: "https://stac-fx.vercel.app/",
   },
   {
     number: "01",
@@ -334,8 +334,7 @@ const projects = [
     image: "./splogistics.png",
     video: "splogistics.mp4",
     source_code_link: "",
-    live_link:
-      "",
+    live_link: "https://sp-logistics.vercel.app/login",
   },
   // {
   //   number: "01",
@@ -405,8 +404,8 @@ const projects = [
     ],
     image: "./onebot.png",
     video: "",
-    source_code_link: "https://github.com/Dr-HaEgHo/portfolio2022",
-    live_link: "https://portfolio-dr-haegho.vercel.app/",
+    source_code_link: "",
+    live_link: "https://one-bot.vercel.app/signup",
   },
   {
     number: "04",
@@ -470,7 +469,7 @@ const projects = [
     image: "./wSquare.png",
     video: "wsquare.mp4",
     source_code_link: "",
-    live_link: "https://www.talk60Seconds.com/",
+    live_link: "https://www.wsquare.co.uk/",
   },
   {
     number: "04",
